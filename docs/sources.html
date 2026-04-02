@@ -1,33 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sources</title>
-<link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sources | Project10</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-<header>
-<h1>Project10</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="workforce.html">Workforce</a>
-<a href="classification.html">Classification</a>
-<a href="governance.html">Governance</a>
-<a href="structure.html">2022 Structure</a>
-<a href="methods.html">Methods</a>
-<a href="sources.html">Sources</a>
-</nav>
-</header>
+  <header class="site-header compact-header">
+    <div class="container nav-wrap">
+      <div>
+        <p class="site-kicker">Project10</p>
+        <h1 class="site-title">Sources</h1>
+        <p class="site-subtitle">
+          Public datasets, reference materials, and documentation notes for reproducibility.
+        </p>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="workforce.html">Workforce</a>
+        <a href="classification.html">Classification</a>
+        <a href="governance.html">Governance</a>
+        <a href="structure.html">2022 Structure</a>
+        <a href="methods.html">Methods</a>
+        <a href="sources.html" class="active">Sources</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
-<h2>Sources</h2>
-<p>Content placeholder.</p>
-</main>
+  <main class="container page-shell">
+    <section class="page-intro">
+      <p class="eyebrow">Documentation</p>
+      <h2>Source log format</h2>
+      <p>
+        Each source should be documented with its publisher, type, date accessed, and exact use in the project.
+        This helps distinguish direct dataset fields from context documents and manually coded indicators.
+      </p>
+    </section>
 
-<footer>
-<p>Project10</p>
-</footer>
-<script src="assets/js/main.js"></script>
+    <section class="content-card">
+      <h3>Suggested Source Table</h3>
+      <div class="table-wrap">
+        <table class="source-table">
+          <thead>
+            <tr>
+              <th>Source</th>
+              <th>Type</th>
+              <th>Primary Use</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Current Employee Names, Salaries, and Position Titles</td>
+              <td>Dataset</td>
+              <td>Base workforce table</td>
+              <td>Add URL and access date</td>
+            </tr>
+            <tr>
+              <td>Workforce Vacancies</td>
+              <td>Dataset</td>
+              <td>Vacancy pressure analysis</td>
+              <td>Add URL and access date</td>
+            </tr>
+            <tr>
+              <td>Classification / Pay Plan references</td>
+              <td>Reference</td>
+              <td>Title crosswalk support</td>
+              <td>Add URL and access date</td>
+            </tr>
+            <tr>
+              <td>Governance / Shakman materials</td>
+              <td>Reference</td>
+              <td>Role-status and governance interpretation</td>
+              <td>Add URL and access date</td>
+            </tr>
+            <tr>
+              <td>2022 budget and funding materials</td>
+              <td>PDF / Report</td>
+              <td>Structural change evidence layer</td>
+              <td>Add URL and access date</td>
+            </tr>
+            <tr>
+              <td>Public health and technology materials</td>
+              <td>Reference</td>
+              <td>Department-specific structure signals</td>
+              <td>Add URL and access date</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="content-card">
+      <h3>Documentation Standard</h3>
+      <ul>
+        <li>Record the exact title of each source.</li>
+        <li>Note whether the source is a machine-readable dataset, PDF, webpage, or memo.</li>
+        <li>Document the specific variable, tag, or interpretation it supports.</li>
+        <li>Keep a note on any manual extraction or inferred logic used.</li>
+      </ul>
+    </section>
+
+    <section class="content-card">
+      <h3>Transparency Note</h3>
+      <p>
+        The strength of this project comes partly from clear documentation. Even when some evidence comes from PDFs or memos rather than structured tables,
+        careful source logging makes the analysis more credible and easier to defend in an interview or portfolio review.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Project10 • Sources</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
