@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Classification & Compensation | Project10</title>
+  <title>Classification | Project10</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
@@ -11,17 +11,17 @@
     <div class="container nav-wrap">
       <div>
         <p class="site-kicker">Project10</p>
-        <h1 class="site-title">Classification & Compensation</h1>
+        <h1 class="site-title">Classification</h1>
         <p class="site-subtitle">
-          Title normalization, classification mapping, and compensation comparison logic.
+          Title normalization, classification crosswalk logic, and compensation comparison.
         </p>
       </div>
       <nav class="site-nav">
         <a href="index.html">Home</a>
         <a href="workforce.html">Workforce</a>
         <a href="classification.html" class="active">Classification</a>
-        <a href="governance.html">Governance</a>
-        <a href="structure.html">2022 Structure</a>
+        <a href="governance.html">Governance Context</a>
+        <a href="structure.html">2022 Structural Signals</a>
         <a href="methods.html">Methods</a>
         <a href="sources.html">Sources</a>
       </nav>
@@ -31,34 +31,33 @@
   <main class="container page-shell">
     <section class="page-intro">
       <p class="eyebrow">Section 2</p>
-      <h2>How title inconsistency can affect workforce analysis and pay comparisons</h2>
+      <h2>Using public title records realistically</h2>
       <p>
-        Public administrative data often contains inconsistent naming conventions, title fragmentation,
-        and imperfect alignment with formal classification references. This section shows how those issues
-        can be treated as meaningful risk signals rather than mere cleaning problems.
+        Public workforce data can support classification analysis, but only when raw titles are treated carefully.
+        This section focuses on title normalization, standardized grouping, and compensation comparison using documented assumptions.
       </p>
     </section>
 
     <section class="kpi-grid">
       <article class="kpi-card">
-        <span class="kpi-label">Raw Titles</span>
+        <span class="kpi-label">Unique Raw Titles</span>
         <strong class="kpi-value">Placeholder</strong>
-        <p class="kpi-note">Count of unique raw job titles before standardization.</p>
+        <p class="kpi-note">Distinct titles before any normalization.</p>
       </article>
       <article class="kpi-card">
-        <span class="kpi-label">Standardized Groups</span>
+        <span class="kpi-label">Standardized Role Groups</span>
         <strong class="kpi-value">Placeholder</strong>
-        <p class="kpi-note">Count of role groups after normalization or crosswalk mapping.</p>
+        <p class="kpi-note">Role families after title mapping and cleanup.</p>
       </article>
       <article class="kpi-card">
-        <span class="kpi-label">Unmapped Titles</span>
+        <span class="kpi-label">Manual Review Needed</span>
         <strong class="kpi-value">Placeholder</strong>
-        <p class="kpi-note">Percent or count of records not confidently assigned to a standardized group.</p>
+        <p class="kpi-note">Titles not confidently mapped to a standard group.</p>
       </article>
       <article class="kpi-card">
-        <span class="kpi-label">Compensation Variance</span>
+        <span class="kpi-label">Compensation Comparison Signal</span>
         <strong class="kpi-value">Placeholder</strong>
-        <p class="kpi-note">Illustrative variance measure within comparable role categories.</p>
+        <p class="kpi-note">Illustrative within-group variation or outlier pressure.</p>
       </article>
     </section>
 
@@ -66,8 +65,8 @@
       <article class="content-card">
         <h3>Title Fragmentation</h3>
         <p>
-          Show examples of similar roles that appear under multiple naming conventions.
-          This helps support the argument that classification inconsistency is itself a governance and planning issue.
+          Use this section to show where similar roles appear under multiple public title variations.
+          That fragmentation is not just a cleaning issue; it can also weaken comparisons and classification review.
         </p>
         <div class="chart-box">Title fragmentation chart placeholder</div>
       </article>
@@ -75,35 +74,55 @@
       <article class="content-card">
         <h3>Compensation Comparison</h3>
         <p>
-          Compare salary distributions across standardized role families rather than raw titles.
-          This makes compensation analysis more meaningful and helps surface outliers.
+          Use standardized role groups rather than raw titles for pay comparison. This makes compensation review more realistic
+          and reduces the risk of comparing titles that are similar in wording but inconsistent in grouping.
         </p>
         <div class="chart-box">Compensation chart placeholder</div>
       </article>
     </section>
 
     <section class="content-card">
-      <h3>Suggested Logic</h3>
+      <h3>Direct Source Fields Used Here</h3>
       <ul>
-        <li>Normalize capitalization, punctuation, abbreviations, and obvious title variants.</li>
-        <li>Create a crosswalk from raw title to standardized classification group.</li>
-        <li>Track confidence level for each mapping to document uncertainty.</li>
-        <li>Use standardized groups for salary comparison, not raw titles alone.</li>
+        <li>Published position title</li>
+        <li>Department</li>
+        <li>Salary or hourly rate fields</li>
+        <li>Classification and pay-plan reference materials where applicable</li>
       </ul>
     </section>
 
     <section class="content-card">
-      <h3>Risk Interpretation</h3>
+      <h3>Derived Fields Used Here</h3>
+      <ul>
+        <li>Standardized title group</li>
+        <li>Mapping confidence</li>
+        <li>Classification consistency flag</li>
+        <li>Compensation variance indicator</li>
+      </ul>
+    </section>
+
+    <section class="content-card">
+      <h3>Suggested Mapping Standard</h3>
+      <ul>
+        <li>Normalize capitalization, punctuation, abbreviations, and obvious duplicates.</li>
+        <li>Map raw titles to standardized groups only when the logic is documented.</li>
+        <li>Retain an “unmapped” or “manual review” category where confidence is low.</li>
+        <li>Document uncertain matches rather than forcing false precision.</li>
+      </ul>
+    </section>
+
+    <section class="content-card note-card">
+      <h3>Limitation</h3>
       <p>
-        When titles are inconsistent, workforce planning, compensation benchmarking, and governance review all become harder.
-        A relatively simple title-cleaning exercise can therefore produce a powerful risk signal: the quality of the classification structure itself.
+        Standardized role groups on this page are derived from public title records and reference materials.
+        They should be read as analytical groupings, not as official internal HR coding.
       </p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>Project10 • Classification & Compensation</p>
+      <p>Project10 • Classification</p>
     </div>
   </footer>
 
