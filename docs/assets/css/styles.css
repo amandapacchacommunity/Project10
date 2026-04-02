@@ -5,13 +5,15 @@
 :root {
   --bg: #f4f7fb;
   --surface: #ffffff;
-  --surface-soft: #f8fbff;
+  --surface-soft: #f7faff;
   --border: #d8e2ee;
   --text: #142033;
-  --muted: #5e6b7a;
-  --navy: #0c1424;
-  --navy-2: #16233a;
-  --accent: #2f6fed;
+  --muted: #5d6a79;
+  --navy: #0d1526;
+  --navy-2: #18253b;
+  --accent: #2a67df;
+  --note-bg: #fff8e8;
+  --note-border: #f0d48a;
   --shadow: 0 10px 28px rgba(15, 23, 42, 0.07);
 }
 
@@ -35,7 +37,7 @@ body {
 .site-header {
   background: linear-gradient(180deg, var(--navy) 0%, var(--navy-2) 100%);
   color: white;
-  padding: 2.25rem 0 1.5rem;
+  padding: 2.2rem 0 1.4rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -46,12 +48,12 @@ body {
 .nav-wrap {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.15rem;
 }
 
 .site-kicker {
   margin: 0 0 0.45rem 0;
-  color: #b8c7e0;
+  color: #b9c8e0;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -65,8 +67,8 @@ body {
 
 .site-subtitle {
   margin: 0.85rem 0 0 0;
-  max-width: 860px;
-  color: #d8e3f3;
+  max-width: 880px;
+  color: #d9e4f2;
   font-size: 1rem;
 }
 
@@ -77,7 +79,7 @@ body {
 }
 
 .site-nav a {
-  color: #d7e3f7;
+  color: #dbe6f7;
   text-decoration: none;
   padding: 0.5rem 0.85rem;
   border-radius: 999px;
@@ -106,7 +108,17 @@ body {
 
 .hero-card {
   padding: 1.5rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.1rem;
+}
+
+.hero-card h2 {
+  margin: 0.35rem 0 0.85rem 0;
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+}
+
+.hero-card p {
+  color: var(--muted);
+  max-width: 920px;
 }
 
 .page-intro {
@@ -130,16 +142,6 @@ body {
   letter-spacing: 0.08em;
   font-size: 0.8rem;
   font-weight: 700;
-}
-
-.hero-card h2 {
-  margin: 0.35rem 0 0.85rem 0;
-  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
-}
-
-.hero-card p {
-  color: var(--muted);
-  max-width: 900px;
 }
 
 .kpi-grid {
@@ -182,7 +184,7 @@ body {
 .content-card h3 {
   margin-top: 0;
   margin-bottom: 0.7rem;
-  font-size: 1.15rem;
+  font-size: 1.14rem;
 }
 
 .content-card p,
@@ -204,7 +206,7 @@ body {
   display: grid;
   place-items: center;
   background: var(--surface-soft);
-  color: #6f8095;
+  color: #6d7f94;
   font-weight: 600;
   text-align: center;
   padding: 1rem;
@@ -218,28 +220,12 @@ body {
   white-space: pre-line;
   font-family: "Courier New", Courier, monospace;
   font-size: 0.94rem;
+  margin-bottom: 0.8rem;
 }
 
-.table-wrap {
-  overflow-x: auto;
-}
-
-.source-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.source-table th,
-.source-table td {
-  border: 1px solid var(--border);
-  padding: 0.85rem;
-  text-align: left;
-  vertical-align: top;
-}
-
-.source-table th {
-  background: #eff5fb;
-  color: var(--text);
+.note-card {
+  background: var(--note-bg);
+  border-color: var(--note-border);
 }
 
 .site-footer {
@@ -262,6 +248,10 @@ a {
 ul,
 ol {
   padding-left: 1.2rem;
+}
+
+strong {
+  color: var(--text);
 }
 
 @media (max-width: 860px) {
