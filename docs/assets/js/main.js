@@ -1,1 +1,1 @@
-console.log("Project10 GitHub Pages site loaded.");
+console.log("Project10 realistic framing site loaded.");
