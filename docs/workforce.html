@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Workforce Composition | Project10</title>
+  <title>Workforce | Project10</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
@@ -11,17 +11,17 @@
     <div class="container nav-wrap">
       <div>
         <p class="site-kicker">Project10</p>
-        <h1 class="site-title">Workforce Composition</h1>
+        <h1 class="site-title">Workforce</h1>
         <p class="site-subtitle">
-          Department distribution, vacancy pressure, and workforce concentration signals.
+          Workforce composition, staffing distribution, and vacancy-related operational signals.
         </p>
       </div>
       <nav class="site-nav">
         <a href="index.html">Home</a>
         <a href="workforce.html" class="active">Workforce</a>
         <a href="classification.html">Classification</a>
-        <a href="governance.html">Governance</a>
-        <a href="structure.html">2022 Structure</a>
+        <a href="governance.html">Governance Context</a>
+        <a href="structure.html">2022 Structural Signals</a>
         <a href="methods.html">Methods</a>
         <a href="sources.html">Sources</a>
       </nav>
@@ -31,43 +31,43 @@
   <main class="container page-shell">
     <section class="page-intro">
       <p class="eyebrow">Section 1</p>
-      <h2>Department size, staffing distribution, and operational pressure points</h2>
+      <h2>Public workforce records as a starting point for operational review</h2>
       <p>
-        This section focuses on the shape of the workforce itself: where employees are concentrated,
-        where vacancies may create service delivery pressure, and how departmental distribution can
-        be interpreted as an operational risk signal.
+        This section uses public employee and vacancy data to examine departmental distribution,
+        staffing concentration, and vacancy pressure. It focuses on descriptive structure first,
+        then applies a risk lens to identify where operational exposure may be more visible.
       </p>
     </section>
 
     <section class="kpi-grid">
       <article class="kpi-card">
-        <span class="kpi-label">Total Employees</span>
+        <span class="kpi-label">Published Employee Count</span>
         <strong class="kpi-value">Placeholder</strong>
-        <p class="kpi-note">Replace with current employee count from the workforce dataset.</p>
+        <p class="kpi-note">Reported from the employee dataset as published.</p>
       </article>
       <article class="kpi-card">
-        <span class="kpi-label">Departments</span>
+        <span class="kpi-label">Departments Represented</span>
         <strong class="kpi-value">Placeholder</strong>
-        <p class="kpi-note">Distinct departments represented in the employee table.</p>
+        <p class="kpi-note">Distinct department values in the public workforce records.</p>
       </article>
       <article class="kpi-card">
-        <span class="kpi-label">Vacancy Pressure</span>
+        <span class="kpi-label">Vacancy Pressure Signal</span>
         <strong class="kpi-value">Moderate</strong>
-        <p class="kpi-note">Use vacancy count or ratio by department.</p>
+        <p class="kpi-note">Illustrative assessment based on published vacancy counts or ratios.</p>
       </article>
       <article class="kpi-card">
-        <span class="kpi-label">Concentration Risk</span>
+        <span class="kpi-label">Concentration Watch</span>
         <strong class="kpi-value">Placeholder</strong>
-        <p class="kpi-note">Share of workforce concentrated in largest departments.</p>
+        <p class="kpi-note">Use share of workforce in largest departments.</p>
       </article>
     </section>
 
     <section class="two-column">
       <article class="content-card">
-        <h3>Department Workforce Distribution</h3>
+        <h3>Department Distribution</h3>
         <p>
-          Add a bar chart or ranked table showing the largest departments by employee count.
-          This helps identify concentration patterns and organizational dependence.
+          Add a chart or table showing employee counts by department. This is one of the clearest
+          direct outputs available from the public workforce dataset and provides useful context for later analysis.
         </p>
         <div class="chart-box">Department headcount chart placeholder</div>
       </article>
@@ -75,35 +75,53 @@
       <article class="content-card">
         <h3>Vacancy Distribution</h3>
         <p>
-          Add a vacancy chart or summary table to show where staffing gaps are clustered.
-          Departments with high vacancy burden may face continuity and workload risk.
+          Add vacancy counts or vacancy ratios by department using the public vacancies dataset.
+          This can be used as an indicator of staffing pressure, but should not be treated as a full service-level model.
         </p>
         <div class="chart-box">Vacancy chart placeholder</div>
       </article>
     </section>
 
     <section class="content-card">
-      <h3>Analytical Notes</h3>
+      <h3>Direct Source Fields Used Here</h3>
       <ul>
-        <li>Large departments may not always be the highest risk, but they often deserve monitoring due to operational dependency.</li>
-        <li>Vacancy concentration can indicate service disruption, hiring bottlenecks, or budget-planning pressure.</li>
-        <li>Use both absolute counts and relative ratios to avoid overstating risk in large departments.</li>
+        <li>Department name</li>
+        <li>Position title</li>
+        <li>Published salary or hourly rate fields</li>
+        <li>Vacancy counts or staffing-gap records where available</li>
       </ul>
     </section>
 
     <section class="content-card">
-      <h3>Risk Interpretation</h3>
+      <h3>Derived Indicators Used Here</h3>
+      <ul>
+        <li>Department concentration ratio</li>
+        <li>Vacancy pressure flag</li>
+        <li>Operational watchlist grouping</li>
+      </ul>
+    </section>
+
+    <section class="content-card">
+      <h3>Interpretation Notes</h3>
+      <ul>
+        <li>Large departments are not automatically high risk, but they may carry higher operational dependency.</li>
+        <li>Vacancy concentration can indicate staffing strain, hiring lag, or continuity pressure.</li>
+        <li>Use both counts and ratios to avoid overstating risk in high-headcount departments.</li>
+      </ul>
+    </section>
+
+    <section class="content-card note-card">
+      <h3>Limitation</h3>
       <p>
-        Workforce concentration and vacancy clustering are useful early warning indicators.
-        Even without complex forecasting, they help frame where operational resilience may be weaker
-        and where staffing conditions could affect delivery capacity.
+        Workforce counts on this page reflect published public records and do not capture internal management structure,
+        informal reporting lines, or full operational complexity.
       </p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>Project10 • Workforce Composition</p>
+      <p>Project10 • Workforce</p>
     </div>
   </footer>
 
