@@ -1,33 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Classification</title>
-<link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classification & Compensation | Project10</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-<header>
-<h1>Project10</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="workforce.html">Workforce</a>
-<a href="classification.html">Classification</a>
-<a href="governance.html">Governance</a>
-<a href="structure.html">2022 Structure</a>
-<a href="methods.html">Methods</a>
-<a href="sources.html">Sources</a>
-</nav>
-</header>
+  <header class="site-header compact-header">
+    <div class="container nav-wrap">
+      <div>
+        <p class="site-kicker">Project10</p>
+        <h1 class="site-title">Classification & Compensation</h1>
+        <p class="site-subtitle">
+          Title normalization, classification mapping, and compensation comparison logic.
+        </p>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="workforce.html">Workforce</a>
+        <a href="classification.html" class="active">Classification</a>
+        <a href="governance.html">Governance</a>
+        <a href="structure.html">2022 Structure</a>
+        <a href="methods.html">Methods</a>
+        <a href="sources.html">Sources</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
-<h2>Classification</h2>
-<p>Content placeholder.</p>
-</main>
+  <main class="container page-shell">
+    <section class="page-intro">
+      <p class="eyebrow">Section 2</p>
+      <h2>How title inconsistency can affect workforce analysis and pay comparisons</h2>
+      <p>
+        Public administrative data often contains inconsistent naming conventions, title fragmentation,
+        and imperfect alignment with formal classification references. This section shows how those issues
+        can be treated as meaningful risk signals rather than mere cleaning problems.
+      </p>
+    </section>
 
-<footer>
-<p>Project10</p>
-</footer>
-<script src="assets/js/main.js"></script>
+    <section class="kpi-grid">
+      <article class="kpi-card">
+        <span class="kpi-label">Raw Titles</span>
+        <strong class="kpi-value">Placeholder</strong>
+        <p class="kpi-note">Count of unique raw job titles before standardization.</p>
+      </article>
+      <article class="kpi-card">
+        <span class="kpi-label">Standardized Groups</span>
+        <strong class="kpi-value">Placeholder</strong>
+        <p class="kpi-note">Count of role groups after normalization or crosswalk mapping.</p>
+      </article>
+      <article class="kpi-card">
+        <span class="kpi-label">Unmapped Titles</span>
+        <strong class="kpi-value">Placeholder</strong>
+        <p class="kpi-note">Percent or count of records not confidently assigned to a standardized group.</p>
+      </article>
+      <article class="kpi-card">
+        <span class="kpi-label">Compensation Variance</span>
+        <strong class="kpi-value">Placeholder</strong>
+        <p class="kpi-note">Illustrative variance measure within comparable role categories.</p>
+      </article>
+    </section>
+
+    <section class="two-column">
+      <article class="content-card">
+        <h3>Title Fragmentation</h3>
+        <p>
+          Show examples of similar roles that appear under multiple naming conventions.
+          This helps support the argument that classification inconsistency is itself a governance and planning issue.
+        </p>
+        <div class="chart-box">Title fragmentation chart placeholder</div>
+      </article>
+
+      <article class="content-card">
+        <h3>Compensation Comparison</h3>
+        <p>
+          Compare salary distributions across standardized role families rather than raw titles.
+          This makes compensation analysis more meaningful and helps surface outliers.
+        </p>
+        <div class="chart-box">Compensation chart placeholder</div>
+      </article>
+    </section>
+
+    <section class="content-card">
+      <h3>Suggested Logic</h3>
+      <ul>
+        <li>Normalize capitalization, punctuation, abbreviations, and obvious title variants.</li>
+        <li>Create a crosswalk from raw title to standardized classification group.</li>
+        <li>Track confidence level for each mapping to document uncertainty.</li>
+        <li>Use standardized groups for salary comparison, not raw titles alone.</li>
+      </ul>
+    </section>
+
+    <section class="content-card">
+      <h3>Risk Interpretation</h3>
+      <p>
+        When titles are inconsistent, workforce planning, compensation benchmarking, and governance review all become harder.
+        A relatively simple title-cleaning exercise can therefore produce a powerful risk signal: the quality of the classification structure itself.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Project10 • Classification & Compensation</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
