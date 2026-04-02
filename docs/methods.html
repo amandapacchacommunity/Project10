@@ -1,33 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Methods</title>
-<link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Methods | Project10</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-<header>
-<h1>Project10</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="workforce.html">Workforce</a>
-<a href="classification.html">Classification</a>
-<a href="governance.html">Governance</a>
-<a href="structure.html">2022 Structure</a>
-<a href="methods.html">Methods</a>
-<a href="sources.html">Sources</a>
-</nav>
-</header>
+  <header class="site-header compact-header">
+    <div class="container nav-wrap">
+      <div>
+        <p class="site-kicker">Project10</p>
+        <h1 class="site-title">Methods</h1>
+        <p class="site-subtitle">
+          Data preparation, crosswalk logic, derived fields, and limitations.
+        </p>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="workforce.html">Workforce</a>
+        <a href="classification.html">Classification</a>
+        <a href="governance.html">Governance</a>
+        <a href="structure.html">2022 Structure</a>
+        <a href="methods.html" class="active">Methods</a>
+        <a href="sources.html">Sources</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
-<h2>Methods</h2>
-<p>Content placeholder.</p>
-</main>
+  <main class="container page-shell">
+    <section class="page-intro">
+      <p class="eyebrow">Documentation</p>
+      <h2>How the analysis is structured</h2>
+      <p>
+        This section documents how raw administrative data, reference materials, and context documents
+        are translated into usable analytical variables. The emphasis is on transparency, not perfect automation.
+      </p>
+    </section>
 
-<footer>
-<p>Project10</p>
-</footer>
-<script src="assets/js/main.js"></script>
+    <section class="content-card">
+      <h3>Workflow</h3>
+      <ol>
+        <li>Collect employee, vacancy, classification, budget, and governance-related public sources.</li>
+        <li>Normalize titles, department names, and key descriptive fields.</li>
+        <li>Create classification crosswalks linking raw titles to standardized role groups.</li>
+        <li>Tag governance-related and structure-related indicators using documented rules.</li>
+        <li>Derive summary metrics for workforce concentration, title consistency, and compensation comparison.</li>
+      </ol>
+    </section>
+
+    <section class="two-column">
+      <article class="content-card">
+        <h3>Key Derived Fields</h3>
+        <ul>
+          <li><code>employee_title_standardized</code></li>
+          <li><code>classification_group</code></li>
+          <li><code>mapping_confidence</code></li>
+          <li><code>vacancy_pressure_flag</code></li>
+          <li><code>governance_relevance_flag</code></li>
+          <li><code>restructuring_2022_flag</code></li>
+          <li><code>epidemiology_flag</code></li>
+          <li><code>digital_transformation_flag</code></li>
+        </ul>
+      </article>
+
+      <article class="content-card">
+        <h3>Suggested Risk Score Logic</h3>
+        <p>
+          Example framework:
+        </p>
+        <div class="code-block">
+Classification Risk = title inconsistency + unmapped roles
+Compensation Risk = within-group salary variance + outlier pressure
+Operational Risk = vacancy concentration + department dependency
+Structural Risk = growth signals + funding dependency + classification drift
+        </div>
+      </article>
+    </section>
+
+    <section class="content-card">
+      <h3>Assumptions</h3>
+      <ul>
+        <li>Some title mappings require manual judgment and should be documented with confidence levels.</li>
+        <li>Not all reference documents are row-level datasets; some are contextual evidence sources.</li>
+        <li>Structural-change analysis is based on public signals rather than a full internal org chart.</li>
+      </ul>
+    </section>
+
+    <section class="content-card">
+      <h3>Limitations</h3>
+      <p>
+        Public data may contain inconsistent fields, ambiguous titles, or incomplete classification references.
+        This project therefore distinguishes hard source fields from interpreted variables and encourages careful documentation for every manual mapping decision.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Project10 • Methods</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
