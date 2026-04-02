@@ -1,1 +1,1 @@
-console.log('site loaded');
+console.log("Project10 GitHub Pages site loaded.");
