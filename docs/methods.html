@@ -13,15 +13,15 @@
         <p class="site-kicker">Project10</p>
         <h1 class="site-title">Methods</h1>
         <p class="site-subtitle">
-          Data preparation, crosswalk logic, derived fields, and limitations.
+          Data preparation, derived fields, documentation standards, and bounded inference rules.
         </p>
       </div>
       <nav class="site-nav">
         <a href="index.html">Home</a>
         <a href="workforce.html">Workforce</a>
         <a href="classification.html">Classification</a>
-        <a href="governance.html">Governance</a>
-        <a href="structure.html">2022 Structure</a>
+        <a href="governance.html">Governance Context</a>
+        <a href="structure.html">2022 Structural Signals</a>
         <a href="methods.html" class="active">Methods</a>
         <a href="sources.html">Sources</a>
       </nav>
@@ -31,67 +31,99 @@
   <main class="container page-shell">
     <section class="page-intro">
       <p class="eyebrow">Documentation</p>
-      <h2>How the analysis is structured</h2>
+      <h2>How this analysis is built</h2>
       <p>
-        This section documents how raw administrative data, reference materials, and context documents
-        are translated into usable analytical variables. The emphasis is on transparency, not perfect automation.
+        This project combines direct public datasets with reference documents and contextual materials.
+        Because public sources differ in format and level of detail, the method emphasizes documentation,
+        transparent assumptions, and cautious interpretation.
       </p>
     </section>
 
     <section class="content-card">
-      <h3>Workflow</h3>
+      <h3>Core Workflow</h3>
       <ol>
-        <li>Collect employee, vacancy, classification, budget, and governance-related public sources.</li>
-        <li>Normalize titles, department names, and key descriptive fields.</li>
-        <li>Create classification crosswalks linking raw titles to standardized role groups.</li>
-        <li>Tag governance-related and structure-related indicators using documented rules.</li>
-        <li>Derive summary metrics for workforce concentration, title consistency, and compensation comparison.</li>
+        <li>Collect public workforce, vacancy, classification, governance, and budget materials.</li>
+        <li>Clean and normalize department names and title fields where needed.</li>
+        <li>Create standardized role groups using documented crosswalk logic.</li>
+        <li>Apply derived tags for governance relevance and 2022 structural signals.</li>
+        <li>Summarize results using descriptive metrics and an illustrative risk lens.</li>
       </ol>
+    </section>
+
+    <section class="content-card">
+      <h3>Data Use Standard</h3>
+      <ul>
+        <li>Direct source fields are reported as published.</li>
+        <li>Normalized titles and role groups are derived through documented mapping logic.</li>
+        <li>Governance and structural indicators are used as analytical signals, not official determinations.</li>
+        <li>Where public information is incomplete, limitations are stated explicitly rather than filled with unsupported assumptions.</li>
+      </ul>
     </section>
 
     <section class="two-column">
       <article class="content-card">
-        <h3>Key Derived Fields</h3>
+        <h3>Direct Fields</h3>
         <ul>
-          <li><code>employee_title_standardized</code></li>
+          <li><code>department</code></li>
+          <li><code>position_title_raw</code></li>
+          <li><code>salary_or_hourly_rate</code></li>
+          <li><code>vacancy_count</code></li>
+          <li><code>published_reference_title</code></li>
+        </ul>
+      </article>
+
+      <article class="content-card">
+        <h3>Derived Fields</h3>
+        <ul>
+          <li><code>position_title_standardized</code></li>
           <li><code>classification_group</code></li>
           <li><code>mapping_confidence</code></li>
-          <li><code>vacancy_pressure_flag</code></li>
           <li><code>governance_relevance_flag</code></li>
           <li><code>restructuring_2022_flag</code></li>
           <li><code>epidemiology_flag</code></li>
           <li><code>digital_transformation_flag</code></li>
         </ul>
       </article>
+    </section>
 
-      <article class="content-card">
-        <h3>Suggested Risk Score Logic</h3>
-        <p>
-          Example framework:
-        </p>
-        <div class="code-block">
-Classification Risk = title inconsistency + unmapped roles
-Compensation Risk = within-group salary variance + outlier pressure
-Operational Risk = vacancy concentration + department dependency
-Structural Risk = growth signals + funding dependency + classification drift
-        </div>
-      </article>
+    <section class="content-card">
+      <h3>Confidence Framework</h3>
+      <ul>
+        <li><strong>High confidence:</strong> directly supported by published dataset fields or official reference materials.</li>
+        <li><strong>Moderate confidence:</strong> supported by crosswalk logic or multiple public sources.</li>
+        <li><strong>Exploratory:</strong> inferred from budget language, structural context, or broader public documentation.</li>
+      </ul>
+    </section>
+
+    <section class="content-card">
+      <h3>Illustrative Risk Framework</h3>
+      <div class="code-block">
+Illustrative Risk Index =
+Classification Consistency Signal
++ Vacancy Pressure Signal
++ Compensation Comparison Signal
++ Structural Change Signal
+      </div>
+      <p>
+        This is a portfolio model designed to organize public administrative signals into a consistent analytical framework.
+        It is not an official institutional risk rating.
+      </p>
     </section>
 
     <section class="content-card">
       <h3>Assumptions</h3>
       <ul>
-        <li>Some title mappings require manual judgment and should be documented with confidence levels.</li>
-        <li>Not all reference documents are row-level datasets; some are contextual evidence sources.</li>
-        <li>Structural-change analysis is based on public signals rather than a full internal org chart.</li>
+        <li>Some title mappings require manual standardization.</li>
+        <li>Not all governance or structural materials are row-level datasets.</li>
+        <li>Some indicators are best understood as contextual signals rather than precise measurements.</li>
       </ul>
     </section>
 
-    <section class="content-card">
-      <h3>Limitations</h3>
+    <section class="content-card note-card">
+      <h3>Limitation</h3>
       <p>
-        Public data may contain inconsistent fields, ambiguous titles, or incomplete classification references.
-        This project therefore distinguishes hard source fields from interpreted variables and encourages careful documentation for every manual mapping decision.
+        Public data and reference documents may contain ambiguity, formatting differences, or incomplete role detail.
+        This project prioritizes transparency over false precision.
       </p>
     </section>
   </main>
